@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "tslog": "^4.10.2"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "module": "index.ts",
+  "name": "color",
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "private": true,
+  "type": "module"
+}
