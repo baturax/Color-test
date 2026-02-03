@@ -1,6 +1,8 @@
 import { Logger } from "tslog";
 import { toCymk } from "./src/cmyk.ts";
-import { toHsl, toHsv } from "./src/hsv.ts";
+import { toHsl } from "./src/hsl.ts";
+import { toHsv } from "./src/hsv.ts";
+import { invertColor } from "./src/invert.ts";
 import { hexToRgb } from "./src/rbg.ts";
 import { color } from "./src/vars.ts";
 
@@ -10,3 +12,4 @@ logger.info(`\n ${color} RGB: `, hexToRgb(color));
 logger.info(`\n ${color} CMYK: `, toCymk(color));
 logger.info(`\n ${color} HSV: `, toHsv(color));
 logger.info(`\n ${color} HSL: `, toHsl(color));
+logger.info(`\n ${color} Inverted Color: `, invertColor(color));
